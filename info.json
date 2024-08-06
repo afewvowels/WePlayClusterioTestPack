@@ -1,6 +1,6 @@
 {
   "name": "WePlayClusterioTestPack",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "title": "WePlay: Clusterio Test Pack",
   "author": "WePlay",
   "factorio_version": "1.1",
@@ -29,7 +29,7 @@
     "auto_sort_chests",
     "? AutoTrash",
     "? b_light_poles-revived",
-    "BeltRouter",
+    "? BeltRouter",
     "? beltutils",
     "Better-Power-Armor-Grid",
     "better-train-system",
@@ -113,7 +113,7 @@
     "mining-patch-planner",
     "MiscLib",
     "missile_defense_systems",
-    "ModuleInserterEx",
+    "? ModuleInserterEx",
     "Moon_Logic",
     "More-Exoskeletons",
     "more-fusion-reactors",
@@ -123,7 +123,7 @@
     "Nylon",
     "Oil_Based_Paint",
     "OreEraser",
-    "perimeter-paver",
+    "? perimeter-paver",
     "Personal-Roboport-Mk3",
     "PipeVisualizer",
     "power-grid-comb",
@@ -185,6 +185,6 @@
     "WireShortcuts",
     "woc",
     "yafla",
-    "zero-infinity-chests"
+    "? zero-infinity-chests"
   ]
 }

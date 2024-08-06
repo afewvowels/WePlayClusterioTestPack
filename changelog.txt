@@ -1,45 +1,93 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.6
-Date: 2024.08.06
+Version: 0.0.8
+Date: 2024. 08. 06
   Changes:
-    - Found incorrectly formatted line break in older changelog entry so this should be the first correctly formatted changelog entry
-    - Currently clusterio does not recognize this mod download? It doesn't appear in the list of mods, and I've noticed the same thing with other large modpacks.
-    - Workaround for me is to use this modpack to download all the relevant mods and then manually log them individually in the clusterio web ui interface. Bit of a chore and also oddly nostalgic.
-    - Lots of new optional dependency additions when reverting back to the full original modlist and mod customizations. Unknown if these will work out of the box so I'll add notes as things go.
-    - Testing on a remote host on the local network is working with past constrained modlist, so now I'll be working on bringing the full modlist back up to speed and investigating the possibility of doing something like an Ultracube host and passing items between modpacks. Maybe sharing cfg and locale files between hosts already is part of clusterio?
+    - Noticed a duplication with module inserter mods when including
+      the full official space-exploration modpack so I'm marking
+      the module-inserter-extended as optional in case of future/current conflicts.
+    - It's likely a lot of the mods currently marked as dependencies will
+      be grouped and organized into core dependencies
+      and then varying levels of QoL or for specialized host shards.
+    - perimeter-paver mod is now optional
+  Notes:
+    - Still looking around for a linter or something for this changelog
+---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 2024. 08. 06
+  Changes:
+    - Still investingating the changelog issue lol
+    - Adding optional dependencies to the beltlayer and zero-infinity-chests mods
+      as these are the only two in the kind of huge base mod grouping that don't
+      immediately successfully upload to the clusterio controller using the web ui.
+    - Currently unable to troubleshoot clusterio support for zero-infinity-chests
+      and beltlayer mods so this will be the entirety of this update.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 2024. 08. 06
+  Changes:
+    - Found incorrectly formatted line break in older changelog entry
+      so this should be the first correctly formatted changelog entry
+    - Currently clusterio does not recognize this mod download?
+      It doesn't appear in the list of mods, and I've noticed the same thing with other large modpacks.
+    - Workaround for me is to use this modpack to download all the relevant mods
+      and then manually log them individually in the clusterio web ui interface.
+      Bit of a chore and also oddly nostalgic.
+    - Lots of new optional dependency additions when reverting back to the full original
+      modlist and mod customizations. Unknown if these will work out of the box
+      so I'll add notes as things go.
+    - Testing on a remote host on the local network is working with
+      past constrained modlist, so now I'll be working on bringing
+      the full modlist back up to speed and investigating the possibility
+      of doing something like an Ultracube host and passing items between modpacks.
+      Maybe sharing cfg and locale files between hosts already is part of clusterio?
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
-Date: 2024.08.06
+Date: 2024. 08. 06
   Changes:
     - Implemented correct changelog format, thanks PennyJim!
     - Updated dependencies, see last note
     - Fix typo in control.lua
-    - Completely moved everything into an archive folder except for minimal multi-surface for testing clusterio hosts and setup
+    - Completely moved everything into an archive folder except for
+      minimal multi-surface for testing clusterio hosts and setup
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: 2024.08.05
+Date: 2024. 08. 05
   Changes:
-    - Moved necessary clusterio mods to the mods list and added them to the list of the dependencies from my downloads folder
+    - Moved necessary clusterio mods to the mods list and added
+      them to the list of the dependencies from my downloads folder
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: 2024.08.05
-  Changes:
+Date: 2024. 08. 05
+  Features:
     - UnlimitedProductivity and Extended Vanilla mods will also be marked optional
-    - Added an item subgroup missing for ChemistryForYou "water"
     - Fully disabled extended vanilla modpack files
+    - Finally, contradicting (somewhat) the initial point,
+      after correcting previous errors, all formerly optional mods
+      other than UnlimitedProductivity are fully functional and required again
+  Changes:
+    - Added an item subgroup missing for ChemistryForYou "water"
     - Updated loop that modifys assembling machines and module_slots
     - Updated path for burner module graphic
-    - Finally, contradicting (somewhat) the initial point, after correcting previous errors, all formerly optional mods other than UnlimitedProductivity are fully functional and required again
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
-Date: 2024.08.05
+Date: 2024. 08. 05
+  Features:
+    - As a quick fix, trainConstructionSite and UnlimitedProductivity
+      and Extended Vanilla mods will be marked optional
+      and so can be disabled or skipped when initially downloading.
+    - As a local fix, I will likely not troubleshoot the intersection of mods
+      causing the error with train sites, I will likely dig out the bandaid fix
+      I used before and modify the zip files on the local clusterio servers to match.
+      If it's possible to do it within the modpack files
+      I will make a note of it in the changelog.
   Changes:
-    - As a quick fix, trainConstructionSite and UnlimitedProductivity and Extended Vanilla mods will be marked optional and so can be disabled or skipped when initially downloading.
-    - As a local fix, I will likely not troubleshoot the intersection of mods causing the error with train sites, I will likely dig out the bandaid fix I used before and modify the zip files on the local clusterio servers to match. If it's possible to do it within the modpack files I will make a note of it in the changelog.
-    - Modified control.lua to remove non-functioning player initialization code and updated the mod name in the jetpack mod's interface for fuel.
+    - Modified control.lua to remove non-functioning player
+      initialization code and updated the mod name
+      in the jetpack mod's interface for fuel.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 2024.08.05
-  Changes:
-    - Initial playthrough on single PC complete, bundling mods for initial testing on local clusterio servers.
+Date: 2024. 08. 05
+  Major Features:
+    - Initial playthrough on single PC complete,
+      bundling mods for initial testing on local clusterio servers.
     - Currently in non-playable state without use of infinity-chests or other similar items.
