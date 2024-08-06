@@ -2,7 +2,11 @@
 Version: 0.0.6
 Date: 2024.08.06
   Changes:
-    - Found incorrectly formatted line break in older changelog entry
+    - Found incorrectly formatted line break in older changelog entry so this should be the first correctly formatted changelog entry
+    - Currently clusterio does not recognize this mod download? It doesn't appear in the list of mods, and I've noticed the same thing with other large modpacks.
+    - Workaround for me is to use this modpack to download all the relevant mods and then manually log them individually in the clusterio web ui interface. Bit of a chore and also oddly nostalgic.
+    - Lots of new optional dependency additions when reverting back to the full original modlist and mod customizations. Unknown if these will work out of the box so I'll add notes as things go.
+    - Testing on a remote host on the local network is working with past constrained modlist, so now I'll be working on bringing the full modlist back up to speed and investigating the possibility of doing something like an Ultracube host and passing items between modpacks. Maybe sharing cfg and locale files between hosts already is part of clusterio?
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
 Date: 2024.08.06
