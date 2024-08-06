@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2024.08.05
+  - Initial playthrough on single PC complete, bundling mods for initial testing on local clusterio servers.
+  - Currently in non-playable state without use of infinity-chests or other similar items.
