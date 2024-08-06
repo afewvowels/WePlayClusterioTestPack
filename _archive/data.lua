@@ -73,7 +73,7 @@ data:extend({
 local moduleUpdates = {
   {"furnace", "stone-furnace", 1},
   {"furnace", "steel-furnace", 2},
-  {"assembling-machine", "assembling-machine-1", 1},
+  {"assembling-machine", "assembling-machine-1", 2},
   {"mining-drill", "se-core-miner-drill", 6},
   {"assembling-machine", "se-casting-machine", 6},
   {"assembling-machine", "se-space-hypercooler", 5},
@@ -87,6 +87,6 @@ local moduleUpdates = {
 for _, update in ipairs(moduleUpdates) do
   local item = data.raw[update[1]][update[2]]
   item.module_specification = {}
-  item.module_specification.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+  item.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   item.module_specification.module_slots = update[3]
 end

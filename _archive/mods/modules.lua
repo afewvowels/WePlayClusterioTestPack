@@ -97,7 +97,7 @@ data:extend({
   {
     type = "module",
     name = "burner-module",
-    icon = "__WePlaySEK2BZSimple__/graphics/icons/burner-module-icon.png",
+    icon = "__WePlayClusterioTestPack__/graphics/icons/burner-module-icon.png",
     icon_size = 64,
     subgroup = "module",
     order = "a",
